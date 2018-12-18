@@ -1,0 +1,26 @@
+@RunWith(JUnit4.class)
+public class Question1aClassTesting
+{
+  @Test
+  public void testAlternateConstructor()
+  {
+    x = new coordinate(40, -40);
+    assertEquals(40, x.getLatitude());
+    assertEquals(-4, x.getLongitude());
+ 
+    x = new coordinate(91, 40);
+    assertEquals(0.0, x.getLatitude());
+    assertEquals(40, x.getLongitude());
+
+    x = new coordinate(40, -91);
+    assertEquals(40, x.getLatitude());
+    assertEquals(0.0, x.getLongitude());
+
+    x = new coordinate(91, -91);
+    assertEquals(0.0, x.getLatitude());
+    assertEquals(0.0, x.getLongitude());
+  }
+
+
+
+    
